@@ -12,6 +12,10 @@ const logos = [
   { id: 8, src: '/images/Group 32.svg' },
   { id: 9, src: '/images/Group 35.svg' },
   { id: 10, src: '/images/Group 36.svg' },
+  { id: 11, src: '/images/Group 22.svg' },
+  { id: 12, src: '/images/Group 23 (11).svg'},
+  { id: 13, src: '/images/Group 24.svg' },
+  { id: 14, src: '/images/Group 25.svg' },
 ];
 
 export const InfiniteLogoScroll: React.FC = () => {
