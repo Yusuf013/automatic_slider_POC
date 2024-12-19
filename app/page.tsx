@@ -18,7 +18,7 @@ const logos = [
   { id: 14, src: '/images/Group 25.svg' },
 ];
 
-export const InfiniteLogoScroll: React.FC = () => {
+export const InfiniteLogoScroll = () => {
   return (
     <div className="w-full overflow-hidden bg-gray-100 py-12">
       {/* Eén rij met logo's */}
@@ -44,8 +44,8 @@ export const InfiniteLogoScroll: React.FC = () => {
 // Hoofdpagina met InfiniteLogoScroll
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-blue-500">
-      <h1 className="mb-8 text-4xl font-bold text-white">Infinite Logo Animation</h1>
+    <main className="flex min-h-screen flex-col items-center justify-center">
+      <h1 className="mb-8 text-4xl font-bold">Infinite Logo Animation</h1>
       <InfiniteLogoScroll />
     </main>
   );
