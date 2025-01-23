@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Infinite Logo Scroll App
 
-## Getting Started
+Dit project is een eenvoudige React-applicatie die een eindeloze animatie van logo's weergeeft. Het is gebouwd met Next.js en maakt gebruik van Tailwind CSS voor styling.
 
-First, run the development server:
+## Inhoud
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Installatie](#installatie)
+- [Gebruik](#gebruik)
+- [Structuur](#structuur)
+- [Aanpassingen](#aanpassingen)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installatie
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Volg deze stappen om het project lokaal op te zetten:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Kloon de repository:**
 
-## Learn More
+   ```bash
+   git clone https://github.com/Yusuf013/automatic_slider_poc
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Installeer de afhankelijkheden:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Start de ontwikkelserver:**
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Open [http://localhost:3000](http://localhost:3000) om de app in je browser te bekijken.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Gebruik
+
+De applicatie toont een eindeloze animatie van logo's. Je kunt de animatie aanpassen door de logo's in de `InfiniteLogoScroll.tsx` component te wijzigen.
+
+## Structuur
+
+- **`app/components/InfiniteLogoScroll.tsx`**: Bevat de `InfiniteLogoScroll` component die verantwoordelijk is voor het weergeven van de logo's.
+- **`app/globals.css`**: Bevat de globale CSS-stijlen en animaties.
+- **`app/layout.js`**: Definieert de basis lay-out van de applicatie, inclusief lettertypen.
+- **`app/page.tsx`**: De hoofdpagina van de applicatie die de `InfiniteLogoScroll` component weergeeft.
+
+## Aanpassingen
+
+- **Logo's wijzigen**: Voeg nieuwe logo's toe of verwijder bestaande logo's in de `logos` array binnen `InfiniteLogoScroll.tsx`.
+- **Animaties aanpassen**: Pas de animaties aan in `app/globals.css` door de `@keyframes scroll` en `.animate-scroll` klassen te wijzigen.
+
